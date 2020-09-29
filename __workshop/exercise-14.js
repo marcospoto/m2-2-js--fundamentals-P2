@@ -9,6 +9,7 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  return str.split("").filter((words) => words === char).length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

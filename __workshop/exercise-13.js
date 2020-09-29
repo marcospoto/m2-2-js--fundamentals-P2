@@ -7,10 +7,11 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
+  return str.split("").filter((words) => words === "B").length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
-
+console.log(countBs("BananaBabyBubbles"));
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)

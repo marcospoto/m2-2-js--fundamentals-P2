@@ -8,6 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
+  let even = list.filter((item) => item % 2 === 1);
+  return even;
   // list is an array of numbers
 }
 // -----------------------------------------------------------------

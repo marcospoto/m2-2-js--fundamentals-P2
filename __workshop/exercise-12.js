@@ -14,7 +14,21 @@
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
   // grades is an array of numbers
+  let avg = grades.reduce((a, b) => a + b) / grades.length;
+
+  if (avg < 60) {
+    return "F";
+  } else if (avg < 70) {
+    return "D";
+  } else if (avg < 80) {
+    return "C";
+  } else if (avg < 90) {
+    return "B";
+  } else {
+    return "A";
+  }
 }
+console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

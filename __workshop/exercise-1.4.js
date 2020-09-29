@@ -16,7 +16,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
+  // string = "Morty Antoine Smith"
+  // number = 100
   // complete the function
+
+  let arrOfNames = string.split(" ");
+  if (arrOfNames.length <= 2) {
+    return string;
+  } else {
+    let name = arrOfNames[0] + " " + arrOfNames[arrOfNames.length - 1];
+    return name;
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,8 +35,9 @@ function removeMiddleName(string) {
 //
 
 // Call the function to test your code.
-console.log(removeMiddleName("Morty Antoine Smith"));
+// removeMiddleName("Morty Antoine Smith", 100);
 
+console.log(removeMiddleName("Morty Antoine Smith"));
 // Create more test examples.
 
 // This is needed for automated testing (more on that later)
